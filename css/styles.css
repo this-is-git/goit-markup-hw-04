@@ -2,6 +2,11 @@
   --title-color: #212121;
   --accent-color: #2196f3;
   --main-color: #757575;
+  --white: #fff;
+  --bg-color: #2f303a;
+  --black: #000;
+  --silver-color: #f5f4fa;
+  --gray-color: #afb1b8;
 }
 
 ul,
@@ -83,7 +88,7 @@ body {
 }
 
 .logo__decor {
-  color: #000;
+  color: var(--black);
 }
 
 .header__menu,
@@ -134,7 +139,7 @@ body {
 /* heroi */
 .heroi {
   padding: 200px 0;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -156,7 +161,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 30px;
 }
 
@@ -166,7 +171,7 @@ body {
   letter-spacing: 0.06em;
   line-height: 1.87;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   background-color: var(--accent-color);
   cursor: pointer;
   padding: 10px 32px;
@@ -201,7 +206,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -238,7 +243,7 @@ body {
 
 /* team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
 }
 
 .team__title {
@@ -265,11 +270,13 @@ body {
 
 .team__descr {
   padding: 30px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .team__name {
+  font-size: 16px;
   line-height: 1.18;
+  font-weight: 500;
   color: var(--title-color);
   margin-bottom: 10px;
 }
@@ -295,7 +302,7 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
+  color: var(--gray-color);
   border-radius: 50%;
 }
 
@@ -306,7 +313,7 @@ body {
 .team-social__link:hover,
 .team-social__link:focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--white);
 }
 
 /* clients */
@@ -325,9 +332,9 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--gray-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--gray-color);
 }
 
 .clients__icon {
@@ -343,7 +350,7 @@ body {
 /* footer */
 .footer {
   padding: 60px 0;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
 }
 
 .footer__logo {
@@ -352,7 +359,7 @@ body {
 }
 
 .footer .logo__decor {
-  color: #fff;
+  color: var(--white);
 }
 
 .footer__address {
@@ -361,7 +368,7 @@ body {
 
 .address__street {
   line-height: 1.71;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 9px;
 }
 
@@ -387,7 +394,7 @@ body {
 .footer__title {
   line-height: 1.14;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 
@@ -407,7 +414,7 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: #fff;
+  color: var(--white);
 }
 
 .social-list__icon {
@@ -424,7 +431,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.62;
@@ -467,7 +474,7 @@ body {
 
 .portfolio__btn:hover,
 .portfolio__btn:focus {
-  color: #fff;
+  color: var(--white);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -477,6 +484,7 @@ body {
   letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
   color: var(--title-color);
 }
 
